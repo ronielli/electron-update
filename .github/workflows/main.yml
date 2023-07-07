@@ -14,6 +14,3 @@ jobs:
 
       - name: Install dependencies
         run: yarn
-
-      - name: Rum build
-        run: yarn build
