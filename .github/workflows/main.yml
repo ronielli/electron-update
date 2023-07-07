@@ -14,3 +14,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn
+
+      - name: Build the app
+        run: yarn electron-build:package:linux
