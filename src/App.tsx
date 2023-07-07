@@ -10,6 +10,9 @@ function App() {
         <p>
           REACT V1
         </p>
+        <p>
+				Version {process.env.REACT_APP_VERSION? process.env.REACT_APP_VERSION: '0.0.0' }
+				</p>
         </header>
     </div>
   );
