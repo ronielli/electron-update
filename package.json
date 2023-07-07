@@ -49,7 +49,7 @@
     "eject": "react-scripts eject",
     "electron": "electron .",
     "electron-build:package:linux": "cross-env PUBLIC_URL=. yarn build && yarn electron-builder -l -c.extraMetadata.main=public/electron.js",
-    "electron-build:publish:linux": "cross-env GH_TOKEN=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 NODE_ENV=production && cross-env PUBLIC_URL=. yarn build && yarn electron-builder -l -p always -c.extraMetadata.main=public/electron.js"
+    "electron-build:publish:linux": "set GH_TOKEN=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 && cross-env PUBLIC_URL=. yarn build && yarn electron-builder -l -p always -c.extraMetadata.main=public/electron.js"
   },
   "eslintConfig": {
     "extends": [
